@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dr. Lim, Min Hyuk - Profile</title>
   <style>
     body {
@@ -22,7 +23,7 @@
       font-size: 1.4em;
       font-weight: bold;
     }
-    .title, .affiliation, .department {
+    .title, .affiliation, .department, .education, .work {
       font-style: italic;
       color: #666;
     }
@@ -35,6 +36,18 @@
       display: inline-block;
       margin-top: 10px;
       margin-right: 10px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .scholar-link, .orcid-link, .lab-link {
+        display: block;
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+      header {
+        font-size: 1.2em;
+      }
     }
   </style>
 </head>
@@ -54,6 +67,26 @@
     <div class="affiliation">Ulsan National Institute of Science and Technology (UNIST)</div>
     <div class="department">Graduate School of Health Science and Technology, 
     and Department of Biomedical Engineering</div>
+  </section>
+
+  <section>
+    <div class="education">
+      <h3>Education</h3>
+      <ul>
+        <li>2022: Ph.D., Medicine (Biomedical Engineering), Seoul National University</li>
+        <li>2016: M.S., Medicine (Biomedical Engineering), Seoul National University</li>
+        <li>2011: M.D., Seoul National University</li>
+        <li>2007: B.S., Physics, Seoul National University</li>
+      </ul>
+    </div>
+    <div class="work">
+      <h3>Work</h3>
+      <ul>
+        <li>2023-2022: Research Professor in Transdisciplinary Medicine, Seoul National University Hospital</li>
+        <li>2017-2022: Research Physician in Biomedical Engineering, Seoul National University Hospital</li>
+        <li>2011-2014: Public Health Doctor in Cheongju Immigration Detention Center, Ministry of Justice</li>
+      </ul>
+    </div>
   </section>
 
   <section>
